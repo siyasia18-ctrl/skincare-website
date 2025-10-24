@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>18 k Skincare – Refined Beauty, Backed by Science</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #F9F6F2;
+      --text: #2B2B2B;
+      --accent: #C5A880;
+      --accent-dark: #b5966b;
+      --font-heading: 'Playfair Display', serif;
+      --font-body: 'Lato', sans-serif;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: var(--font-body);
+      color: var(--text);
+      background-color: var(--bg);
+      line-height: 1.6;
+      scroll-behavior: smooth;
+    }
+
+    header {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background: rgba(255,255,255,0.9);
+      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 3rem;
+      z-index: 1000;
+    }
+
+    header h1 {
+      font-family: var(--font-heading);
+      font-size: 1.6rem;
+      letter-spacing: 1px;
+    }
+
+    nav a {
+      margin-left: 1.5rem;
+      text-decoration: none;
+      color: var(--text);
+      font-weight: 500;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: var(--accent);
+    }
+
+    /* Hero Section */
+    .hero {
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      text-align: center;
+      background: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), 
+        url('https://images.unsplash.com/photo-1598449440864-5c1d9f8d1d69?auto=format&fit=crop&w=1900&q=80') center/cover no-repeat;
+      color: #fff;
+      padding: 0 2rem;
+    }
+
+    .hero h2 {
+      font-family: var(--font-heading);
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
+
+    .hero p {
+      max-width: 600px;
+      font-size: 1.1rem;
+      margin-bottom: 2rem;
+    }
+
+    .cta {
+      background-color: var(--accent);
+      border: none;
+      padding: 0.8rem 2rem;
+      color: white;
+      cursor: pointer;
+      font-size: 1rem;
+      transition: all 0.3s ease;
+    }
+
+    .cta:hover {
+      background-color: var(--accent-dark);
+      transform: translateY(-2px);
+    }
+
+    section {
+      padding: 6rem 10%;
+      text-align: center;
+    }
+
+    h3 {
+      font-family: var(--font-heading);
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    p {
+      max-width: 800px;
+      margin: 0 auto 2rem;
+    }
+
+    /* About Section */
+    .about {
+      background-color: #fff;
+    }
+
+    .about img {
+      max-width: 500px;
+      width: 100%;
+      border-radius: 8px;
+      margin-top: 2rem;
+    }
+
+    /* Guides Section */
+    .guides {
+      background-color: #F3EFEA;
+    }
+
+    .guide-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+      margin-top: 3rem;
+    }
+
+    .guide {
+      background: #fff;
+      border-radius: 10px;
+      padding: 2rem;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+      transition: transform 0.3s ease;
+    }
+
+    .guide:hover {
+      transform: translateY(-5px);
+    }
+
+    .guide h4 {
+      font-family: var(--font-heading);
+      margin-bottom: 0.5rem;
+      color: var(--accent-dark);
+    }
+
+    /* Contact Section */
+    form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      max-width: 500px;
+      margin: 2rem auto 0;
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 0.8rem;
+      margin-bottom: 1rem;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      font-family: var(--font-body);
+    }
+
+    footer {
+      background-color: #2B2B2B;
+      color: #fff;
+      text-align: center;
+      padding: 2rem;
+    }
+
+    @media (max-width: 768px) {
+      header {
+        padding: 1rem 1.5rem;
+      }
+      .hero h2 {
+        font-size: 2.2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>18k</h1>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#guides">Guides</a>
+      <a href="#contact">Contact</a>
+      <a href="#acids">Acids</a>
+
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <h2>Refined Beauty, Backed by Science</h2>
+    <p>Discover the art of luxurious skincare — where elegance meets efficacy. Crafted for those who believe skincare is self-care.</p>
+    <button class="cta" onclick="document.getElementById('guides').scrollIntoView({behavior: 'smooth'});">Explore Guides</button>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="about">
+    <h3>Our Philosophy</h3>
+    <p>At 18k, we believe that true beauty is timeless. Our mission is to demystify skincare through education, elegance, and ethical practices — empowering you to understand your skin on a deeper level.</p>
+    <img src="https://images.unsplash.com/photo-1615461066841-6116e612d3b0?auto=format&fit=crop&w=1000&q=80" alt="Luxury Skincare Product">
+  </section>
+
+  <!-- Guides Section -->
+  <section id="guides" class="guides">
+    <h3>Skincare Guides</h3>
+    <p>Indulge in our curated guides, designed to elevate your daily routine with knowledge and sophistication.</p>
+    <div class="guide-grid">
+      <div class="guide">
+        <h4>The Science of Serums</h4>
+        <p>Understand how active ingredients penetrate and transform your skin at the cellular level.</p>
+      </div>
+      <div class="guide">
+        <h4>Morning Rituals for Radiance</h4>
+        <p>Discover the luxurious routines that awaken your complexion and enhance glow.</p>
+      </div>
+      <div class="guide">
+        <h4>Decoding Ingredients</h4>
+        <p>Learn the truth behind hyaluronic acid, niacinamide, peptides, and more.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <h3>Stay Connected</h3>
+    <p>Join our community for expert skincare insights, exclusive tips, and luxurious inspiration delivered to your inbox.</p>
+    <section id="acids" style="background-color:#F3EFEA;">
+  <h3>The Power of Acids in Skincare</h3>
+  <p>
+    In luxury skincare, acids are the unsung heroes — refining texture, brightening tone, and renewing the skin’s surface for a luminous complexion.
+  </p>
+  <div style="max-width:800px; margin:auto; text-align:left;">
+    <h4>Salicylic Acid – The Clarifier</h4>
+    <p>
+      Derived from willow bark, <strong>salicylic acid</strong> is a beta hydroxy acid (BHA) that penetrates deep into pores to dissolve excess oil and impurities. 
+      It is exceptional for refining texture and minimizing breakouts without stripping the skin. 
+      Luxury formulations balance its potency with soothing ingredients like green tea or squalane, ensuring clarity with comfort.
+    </p>
+
+    <h4>Glycolic Acid – The Refiner</h4>
+    <p>
+      As the smallest alpha hydroxy acid (AHA), <strong>glycolic acid</strong> gently loosens dull surface cells to reveal new radiance beneath. 
+      Regular use enhances smoothness, fades discoloration and pigmentation, and improves absorption of serums and creams.
+    </p>
+
+    <h4>Lactic Acid – The Softener</h4>
+    <p>
+      <strong>Lactic acid</strong> offers exfoliation with elegance — hydrating while it refines. 
+      Sourced from milk or fermented plants, it boosts luminosity and suppleness, making it ideal for dry or sensitive skin types.
+    </p>
+
+    <h4>Vitamin C The brightner</h4>
+    <p>
+        <strong>Vitamin C</strong> act as brigtner tonic for skin.It along with sunscreen protect ius 
+        from sun harmful rays because of its oxidising nature.
+    </p>
+
+    <h4>How to Use Acids Wisely</h4>
+    <p>
+      Rotate acids based on your skin’s needs, and avoid layering too many actives in one routine. 
+      Always follow with a rich moisturizer and SPF — as exfoliation makes skin more light-sensitive. 
+      The result: a complexion that’s polished, not punished.
+    </p>
+  </div>
+  <img src="https://images.unsplash.com/photo-1583241804273-3b8a53a9a090?auto=format&fit=crop&w=1000&q=80" 
+       alt="Luxury skincare acids" 
+       style="max-width:600px; border-radius:8px; margin:3rem auto; display:block;">
+</section>
+
+    <form>
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea rows="4" placeholder="Message (optional)"></textarea>
+      <button class="cta" type="submit">Subscribe</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>© 2025 18k Skincare. All rights reserved.</p>
+  </footer>
+</body>
+</html>
